@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andy Trus — Principal PM / Product Director, AbsenceSoft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================ -->
+<!-- CONFIG — edit copy/content here. Design & render logic below. -->
+<!-- ============================================================ -->
+<script>
+const CONFIG = {
+  meta: {
+    role: "Principal Product Manager / Product Director",
+    company: "AbsenceSoft",
+    reportingTo: "Jaclyn Zhuang, Chief Product Officer",
+  },
+
+  hero: {
+    eyebrow: "PREPARED FOR ABSENCESOFT — PRINCIPAL PM / PRODUCT DIRECTOR",
+    headline: "I've spent 13 years shipping products where being wrong is expensive.",
+    sub: "A wrong answer key in a McGraw Hill assessment costs the company money and costs a teacher trust in the platform, on the same day. A wrong FMLA determination costs an employer a claim and costs an employee a leave they were owed. Different rulebooks. Same shape of problem. I know how to put AI into that kind of environment carefully, and still ship it fast.",
+    ctaLabel: "trus.productguy@gmail.com",
+    ctaHref: "mailto:trus.productguy@gmail.com",
+    name: "Andy Trus",
+    tagline: "Product leader, 13+ years EdTech · MS-HCI, Indiana University"
+  },
+
+  opening: {
+    label: "THE MOMENT THIS ROLE KEEPS BRINGING TO MIND",
+    body: [
+      "Ninety days. That's how long it took to get a Generative AI math tutoring concept in front of real students and teachers — from a whiteboard idea to a live proof of concept, with more than 80% of participating teachers telling us afterward that it had a positive effect on their classroom.",
+      "The model wasn't the hard part. The hard part was deciding, fast and correctly, where the AI should be trusted to act on its own, where a teacher needed to stay in the loop, and how we'd know if it was wrong before a student did. That's the same judgment call I'd be making at AbsenceSoft — just with case files instead of classrooms."
+    ]
+  },
+
+  pillars: [
+    {
+      tag: "AI IN PRODUCTION",
+      title: "AI you can put in front of a regulator, not just a demo",
+      body: "I've shipped generative AI into environments where an error has real cost — financial and reputational. An internal AI review tool I launched at McGraw Hill caught content errors across math and science curriculum before they reached students, saving $2.75M in vendor review costs. A Gen AI tutoring concept went from idea to live pilot in 90 days with strong teacher adoption signal.",
+      metric: "$2.75M",
+      metricLabel: "saved catching errors before they shipped",
+      link: "AbsenceSoft's ACE compliance engine is the same kind of asset: a proprietary rules layer that has to be right before it ever touches a live case. That's the exact muscle I'd bring to bear."
+    },
+    {
+      tag: "END-TO-END OWNERSHIP",
+      title: "Owning a product line through outcomes, not just through a roadmap",
+      body: "As Product Director for WebAssign, I owned a $100M+, 1M+ student platform end to end — strategy, discovery, GTM, and the metrics that proved it worked. I led the consolidation of a $15M+ Chemistry offering into a unified platform to cut churn and cost, and drove CSAT gains alongside 10% two-year unit growth.",
+      metric: "$100M+",
+      metricLabel: "platform owned end-to-end, 1M+ students",
+      link: "This role asks for someone who sets strategy and owns post-launch results with real autonomy. I've done that at enterprise B2B scale — I'd just be doing it without the Director title attached on day one, which I'm at peace with."
+    },
+    {
+      tag: "DATA FLUENCY",
+      title: "Turning ambiguity into instrumented outcomes",
+      body: "I built the acquisition, engagement, and retention KPI dashboards that became the measurement standard across McGraw Hill's K-12 product lines. Earlier, I grew a Statistics product line 21% over three years by running my own usability studies, customer interviews, and conjoint analysis — not by waiting for someone else's research.",
+      metric: "21%",
+      metricLabel: "product line growth over 3 years",
+      link: "\"Strong data fluency\" and \"translate customer insights into decisions\" aren't things I'd need to learn on the job — they're how I've operated at every company on my resume."
+    },
+    {
+      tag: "AUTONOMY",
+      title: "I don't need a team under me to move fast",
+      body: "I built a Rovo AI agent my own PMs now use to improve PRD quality, and a personal AI system to grade my own effectiveness as a manager — both self-initiated, neither assigned to me. Before I managed anyone, I spent nine years as an individual contributor, including building a 0-to-1 developmental math product from scratch.",
+      metric: "0→1",
+      metricLabel: "self-initiated AI tools, no mandate required",
+      link: "This is described as a senior IC seat with a path to build a team as the area grows. I'm currently a people manager, but I built my track record as an individual contributor first — giving that up to do the work myself again isn't a step backward for me."
+    }
+  ],
+
+  gaps: {
+    label: "WHERE I'D NEED TO RAMP — SAID PLAINLY",
+    items: [
+      {
+        title: "No direct leave, FMLA/ADA, or benefits-compliance experience",
+        body: "My closest adjacency is assessment content accuracy at scale — a different rulebook, but the same discipline of building guardrails around a proprietary rules engine so it's trustworthy before it touches a real case. I'd expect a genuine ramp on the statutory side, not a fast bluff through it."
+      },
+      {
+        title: "I currently manage people; this role manages none, at first",
+        body: "I lead 2 PMs and 4 engineering teams today. This is a senior IC role with a path to build a team later. I spent the first nine years of my career as an individual contributor and I still build my own tools solo — I'm genuinely comfortable doing the work myself again."
+      }
+    ]
+  },
+
+  questions: {
+    label: "QUESTIONS I'D BRING TO JACLYN",
+    items: [
+      "AbsenceSoft's own research points out that most AI use in HR today happens without compliance guardrails. As you bring AI deeper into the product, where do you draw the line between what the model can decide autonomously and what has to stay human-reviewed — and has that line moved since you got here?",
+      "You've scaled AI-native platform features at Eightfold and led the Experience Platform through cloud migration at Atlassian. What's one pattern from those environments you're deliberately trying to repeat here, and one you're avoiding?",
+      "This role starts as a senior IC with a path to build a team as the area grows. What would you need to see in the first two quarters to make that call — and is that a metric, a scope decision, or something else?"
+    ]
+  },
+
+  contact: {
+    name: "Andy Trus",
+    email: "trus.productguy@gmail.com",
+    phone: "301-461-6166",
+    linkedin: "linkedin.com/in/andy-trus",
+    linkedinHref: "https://linkedin.com/in/andy-trus"
+  }
+};
+</script>
+<!-- ============================================================ -->
+<!-- END CONFIG -->
+<!-- ============================================================ -->
+
+<style>
+  :root{
+    --bg: #F5F3EC;
+    --panel: #FFFFFF;
+    --ink: #1E2A2A;
+    --ink-soft: #4A5757;
+    --verified: #2F6F5E;
+    --verified-dim: #DCE6E1;
+    --flag: #B96A2C;
+    --flag-dim: #F2E3D3;
+    --line: #DAD4C3;
+    --mono: 'IBM Plex Mono', monospace;
+    --serif: 'Fraunces', serif;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{ background: var(--verified); color:#fff; }
+
+  a{ color: var(--verified); }
+
+  .wrap{ max-width: 980px; margin:0 auto; padding: 0 28px; }
+
+  /* ---------- top ledger strip ---------- */
+  .ledger-strip{
+    border-bottom: 1px solid var(--line);
+    background: var(--panel);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    padding: 10px 0;
+  }
+  .ledger-strip .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; }
+
+  /* ---------- hero ---------- */
+  .hero{ padding: 84px 0 64px; position:relative; }
+  .eyebrow{
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    color: var(--verified);
+    text-transform:uppercase;
+    margin-bottom: 22px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px; height:7px; border-radius:50%;
+    background:var(--verified);
+    display:inline-block;
+  }
+  h1.headline{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 26px;
+    max-width: 15ch;
+  }
+  .hero .sub{
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 36px;
+  }
+  .hero-foot{ display:flex; align-items:center; gap:22px; flex-wrap:wrap; }
+  .cta-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background: var(--ink);
+    color: var(--bg);
+    text-decoration:none;
+    padding: 13px 22px;
+    border-radius: 3px;
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .cta-btn:hover{ background: var(--verified); transform: translateY(-1px); }
+  .hero-meta{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  .hero-meta strong{ color:var(--ink); font-style:normal; }
+
+  /* stamp signature element */
+  .stamp{
+    position:absolute;
+    top: 78px; right: 28px;
+    width: 108px; height:108px;
+    border: 2px solid var(--verified);
+    border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+    transform: rotate(-9deg);
+    opacity: 0.9;
+  }
+  .stamp::before{
+    content:"";
+    position:absolute; inset:6px;
+    border: 1px solid var(--verified);
+    border-radius:50%;
+  }
+  .stamp-text{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    color: var(--verified);
+    text-align:center;
+    line-height:1.5;
+  }
+  @media (max-width: 720px){ .stamp{ display:none; } }
+
+  /* ---------- section shell ---------- */
+  section{ padding: 58px 0; border-top: 1px solid var(--line); }
+  .section-label{
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    text-transform:uppercase;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- opening moment ---------- */
+  .opening p{
+    font-family: var(--serif);
+    font-size: clamp(19px, 2.4vw, 24px);
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 68ch;
+    margin: 0 0 22px;
+  }
+  .opening p:last-child{ color: var(--ink-soft); font-style: italic; font-size: 19px;}
+
+  /* ---------- pillars ---------- */
+  .pillar{
+    display:grid;
+    grid-template-columns: 130px 1fr;
+    gap: 28px;
+    padding: 34px 0;
+    border-top: 1px solid var(--line);
+  }
+  .pillar:first-of-type{ border-top:none; }
+  .pillar-metric{
+    font-family: var(--mono);
+  }
+  .pillar-metric .num{
+    font-size: 30px;
+    color: var(--verified);
+    font-weight:500;
+    display:block;
+    line-height:1.1;
+  }
+  .pillar-metric .lbl{
+    font-size: 11px;
+    color: var(--ink-soft);
+    display:block;
+    margin-top:6px;
+    line-height:1.4;
+  }
+  .pillar-tag{
+    display:inline-block;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    color: var(--verified);
+    background: var(--verified-dim);
+    padding: 4px 9px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+  }
+  .pillar h3{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 23px;
+    margin: 0 0 12px;
+    line-height:1.3;
+  }
+  .pillar p.body{ margin: 0 0 14px; color: var(--ink); }
+  .pillar p.link{
+    margin:0;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--verified);
+    padding-left: 14px;
+  }
+  @media (max-width: 640px){
+    .pillar{ grid-template-columns: 1fr; }
+    .pillar-metric{ display:flex; align-items:baseline; gap:10px; }
+    .pillar-metric .lbl{ margin-top:0; }
+  }
+
+  /* ---------- gaps ---------- */
+  .gaps-section{ background: var(--panel); }
+  .gap-item{
+    display:grid;
+    grid-template-columns: 28px 1fr;
+    gap: 16px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .gap-item:first-of-type{ border-top:none; }
+  .flag-mark{
+    width:22px; height:22px;
+    border-radius:50%;
+    background: var(--flag-dim);
+    color: var(--flag);
+    font-family: var(--mono);
+    font-size: 13px;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:600;
+  }
+  .gap-item h4{
+    font-family: var(--sans);
+    font-weight:600;
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  .gap-item p{ margin:0; color: var(--ink-soft); font-size: 15px; max-width: 62ch;}
+
+  /* ---------- questions ---------- */
+  .q-item{
+    counter-increment: q;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+    display:grid;
+    grid-template-columns: 34px 1fr;
+    gap: 16px;
+  }
+  .q-item:first-of-type{ border-top:none; }
+  .questions{ counter-reset: q; }
+  .q-num{
+    font-family: var(--mono);
+    color: var(--verified);
+    font-size: 14px;
+  }
+  .q-num::before{ content: "Q" counter(q); }
+  .q-item p{ margin:0; font-size: 16px; }
+
+  /* ---------- footer / contact ---------- */
+  footer{
+    padding: 56px 0 40px;
+    border-top: 1px solid var(--line);
+  }
+  .contact-grid{
+    display:flex; flex-wrap:wrap; gap: 28px 40px;
+    margin-bottom: 30px;
+  }
+  .contact-grid a, .contact-grid span{
+    font-family: var(--mono);
+    font-size: 13.5px;
+    color: var(--ink);
+    text-decoration:none;
+  }
+  .contact-grid a:hover{ color: var(--verified); }
+  .credit{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="ledger-strip">
+    <div class="wrap">
+      <span id="strip-name"></span>
+      <span id="strip-role"></span>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="wrap" style="position:relative;">
+      <div class="stamp"><div class="stamp-text">SOURCE<br>VERIFIED</div></div>
+      <div class="eyebrow" id="hero-eyebrow"></div>
+      <h1 class="headline" id="hero-headline"></h1>
+      <p class="sub" id="hero-sub"></p>
+      <div class="hero-foot">
+        <a class="cta-btn" id="hero-cta" href="#"></a>
+        <span class="hero-meta" id="hero-meta"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="opening">
+    <div class="wrap">
+      <div class="section-label" id="opening-label"></div>
+      <div id="opening-body"></div>
+    </div>
+  </section>
+
+  <section class="pillars-section">
+    <div class="wrap">
+      <div class="section-label">WHAT I'D BRING TO THIS ROLE</div>
+      <div id="pillars"></div>
+    </div>
+  </section>
+
+  <section class="gaps-section">
+    <div class="wrap">
+      <div class="section-label" id="gaps-label"></div>
+      <div id="gaps"></div>
+    </div>
+  </section>
+
+  <section class="questions-section">
+    <div class="wrap">
+      <div class="section-label" id="questions-label"></div>
+      <div class="questions" id="questions"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="contact-grid" id="contact-grid"></div>
+      <div class="credit">Built by Andy Trus, with Claude as thinking partner.</div>
+    </div>
+  </footer>
+
+<script>
+  const $ = id => document.getElementById(id);
+
+  // ledger strip
+  $('strip-name').textContent = CONFIG.hero.name.toUpperCase();
+  $('strip-role').textContent = `${CONFIG.meta.role.toUpperCase()} · ${CONFIG.meta.company.toUpperCase()}`;
+
+  // hero
+  $('hero-eyebrow').textContent = CONFIG.hero.eyebrow;
+  $('hero-headline').textContent = CONFIG.hero.headline;
+  $('hero-sub').textContent = CONFIG.hero.sub;
+  $('hero-cta').textContent = CONFIG.hero.ctaLabel + "  →";
+  $('hero-cta').href = CONFIG.hero.ctaHref;
+  $('hero-meta').innerHTML = `<strong>${CONFIG.hero.name}</strong> — ${CONFIG.hero.tagline}`;
+
+  // opening
+  $('opening-label').textContent = CONFIG.opening.label;
+  $('opening-body').innerHTML = CONFIG.opening.body.map(p => `<p>${p}</p>`).join('');
+
+  // pillars
+  $('pillars').innerHTML = CONFIG.pillars.map(p => `
+    <div class="pillar">
+      <div class="pillar-metric">
+        <span class="num">${p.metric}</span>
+        <span class="lbl">${p.metricLabel}</span>
+      </div>
+      <div>
+        <span class="pillar-tag">${p.tag}</span>
+        <h3>${p.title}</h3>
+        <p class="body">${p.body}</p>
+        <p class="link">${p.link}</p>
+      </div>
+    </div>
+  `).join('');
+
+  // gaps
+  $('gaps-label').textContent = CONFIG.gaps.label;
+  $('gaps').innerHTML = CONFIG.gaps.items.map(g => `
+    <div class="gap-item">
+      <div class="flag-mark">!</div>
+      <div>
+        <h4>${g.title}</h4>
+        <p>${g.body}</p>
+      </div>
+    </div>
+  `).join('');
+
+  // questions
+  $('questions-label').textContent = CONFIG.questions.label;
+  $('questions').innerHTML = CONFIG.questions.items.map(q => `
+    <div class="q-item">
+      <div class="q-num"></div>
+      <p>${q}</p>
+    </div>
+  `).join('');
+
+  // contact
+  const c = CONFIG.contact;
+  $('contact-grid').innerHTML = `
+    <a href="mailto:${c.email}">${c.email}</a>
+    <span>${c.phone}</span>
+    <a href="${c.linkedinHref}" target="_blank" rel="noopener">${c.linkedin}</a>
+  `;
+</script>
+</body>
+</html>
