@@ -68,16 +68,21 @@ const CONFIG = {
       body: "Before I managed a single person, I spent nine years as an individual contributor at Cengage/WebAssign — walking into greenfield problems with nothing but a blank page, including building a 0-to-1 developmental math product from scratch and a 0-to-1 assessment product line that ultimately placed over 150,000 students into math courses. That's the exact muscle a senior IC seat on a new product area needs: someone who doesn't need a team in place to make a greenfield product move.",
       metric: "9 yrs",
       metricLabel: "as a senior IC before I managed anyone",
-      link: "When I did start managing, I mentored associate PMs into promotion twice and built the KPI dashboards that became the K-12 standard. I've done both versions of this job — I'd come in ready to run point solo, and ready to build the team once the area earns one."
+      link: "You've said PM teams organized around features rather than personas is a mistake. I built product lines around the student, not the screen, before I had a name for that instinct. When this area earns a team, I'd build it around who's actually touching a case — the HR admin, the employee, the manager — not around modules."
     }
   ],
 
-  gaps: {
-    label: "WHERE I'D NEED TO RAMP — SAID PLAINLY",
+  resonance: {
+    label: "TWO THINGS YOU'VE SAID THAT I ALREADY BELIEVE",
+    sourceNote: "Both from your July 2026 conversation on the Zero to One podcast.",
     items: [
       {
-        title: "No direct leave, FMLA/ADA, or benefits-compliance experience",
-        body: "My closest adjacency is assessment content accuracy at scale — a different rulebook, but the same discipline of building guardrails around a proprietary rules engine so it's trustworthy before it touches a real case. I'd expect a genuine ramp on the statutory side, not a fast bluff through it."
+        title: "Fix what's leaking before you chase what's next",
+        body: "You talked about the moment leadership pushed hard on acquisition while retention was quietly broken — and choosing to fix the foundation first, even though it wasn't the exciting call. I made that same call at Cengage: when a $15M Chemistry platform was bleeding customers, the fix wasn't a flashy new build. It was a slow, unglamorous migration of 40+ stakeholders onto a stable platform — the project everyone wanted to skip past to get to the next new thing."
+      },
+      {
+        title: "\u201CLogic only moves people so far\u201D \u2014 so I stopped leading with it",
+        body: "That's a line you've carried through your career. I learned it the hard way with the Gen AI math tutor: teachers didn't adopt it because the model was accurate — they adopted it because we earned their trust before asking them to hand over judgment calls. That's the same math AbsenceSoft is solving at higher stakes: an HR person deciding whether to trust AI with someone's FMLA case isn't a logic problem first. It's a trust problem first."
       }
     ]
   },
@@ -86,8 +91,8 @@ const CONFIG = {
     label: "QUESTIONS I'D BRING TO JACLYN",
     items: [
       "AbsenceSoft's own research points out that most AI use in HR today happens without compliance guardrails. As you bring AI deeper into the product, where do you draw the line between what the model can decide autonomously and what has to stay human-reviewed — and has that line moved since you got here?",
-      "You've scaled AI-native platform features at Eightfold and led the Experience Platform through cloud migration at Atlassian. What's one pattern from those environments you're deliberately trying to repeat here, and one you're avoiding?",
-      "This role starts as a senior IC with a path to build a team as the area grows. What would you need to see in the first two quarters to make that call — and is that a metric, a scope decision, or something else?"
+      "You've said the real AI adoption gap isn't better models, it's closing the trust and workflow gap — especially where regulation creates hesitation. In a category where a wrong AI call has real legal exposure, is that gap here more about earning HR's trust or about genuine legal risk tolerance — and does the answer change state by state?",
+      "The exec team here is about six months old top to bottom. How much of the roadmap for the area I'd own is inherited from before that turnover, versus being rebuilt fresh under this leadership?"
     ]
   },
 
@@ -310,33 +315,40 @@ const CONFIG = {
     .pillar-metric .lbl{ margin-top:0; }
   }
 
-  /* ---------- gaps ---------- */
-  .gaps-section{ background: var(--panel); }
-  .gap-item{
+  /* ---------- resonance ---------- */
+  .resonance-section{ background: var(--panel); }
+  .resonance-source{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: -18px 0 28px;
+  }
+  .echo-item{
     display:grid;
     grid-template-columns: 28px 1fr;
     gap: 16px;
     padding: 22px 0;
     border-top: 1px solid var(--line);
   }
-  .gap-item:first-of-type{ border-top:none; }
-  .flag-mark{
+  .echo-item:first-of-type{ border-top:none; }
+  .echo-mark{
     width:22px; height:22px;
     border-radius:50%;
-    background: var(--flag-dim);
-    color: var(--flag);
+    background: var(--verified-dim);
+    color: var(--verified);
     font-family: var(--mono);
     font-size: 13px;
     display:flex; align-items:center; justify-content:center;
     font-weight:600;
   }
-  .gap-item h4{
+  .echo-item h4{
     font-family: var(--sans);
     font-weight:600;
     font-size: 16px;
     margin: 0 0 8px;
   }
-  .gap-item p{ margin:0; color: var(--ink-soft); font-size: 15px; max-width: 62ch;}
+  .echo-item p{ margin:0; color: var(--ink-soft); font-size: 15px; max-width: 62ch;}
 
   /* ---------- questions ---------- */
   .q-item{
@@ -417,10 +429,11 @@ const CONFIG = {
     </div>
   </section>
 
-  <section class="gaps-section">
+  <section class="resonance-section">
     <div class="wrap">
-      <div class="section-label" id="gaps-label"></div>
-      <div id="gaps"></div>
+      <div class="section-label" id="resonance-label"></div>
+      <div class="resonance-source" id="resonance-source"></div>
+      <div id="resonance"></div>
     </div>
   </section>
 
@@ -473,14 +486,15 @@ const CONFIG = {
     </div>
   `).join('');
 
-  // gaps
-  $('gaps-label').textContent = CONFIG.gaps.label;
-  $('gaps').innerHTML = CONFIG.gaps.items.map(g => `
-    <div class="gap-item">
-      <div class="flag-mark">!</div>
+  // resonance
+  $('resonance-label').textContent = CONFIG.resonance.label;
+  $('resonance-source').textContent = CONFIG.resonance.sourceNote;
+  $('resonance').innerHTML = CONFIG.resonance.items.map(r => `
+    <div class="echo-item">
+      <div class="echo-mark">&#10003;</div>
       <div>
-        <h4>${g.title}</h4>
-        <p>${g.body}</p>
+        <h4>${r.title}</h4>
+        <p>${r.body}</p>
       </div>
     </div>
   `).join('');
